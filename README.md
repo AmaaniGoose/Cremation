@@ -38,11 +38,11 @@ To be honest, the idea for this came to me in a dream where an old school teache
 1. Development:
     1. Front End: ReactJs and Bootstrap 4.
     1. Backend: NodeJs and MongoDB
-2. Design:
-    2. Graphics: I need someone to make the vector art of the vase and the flowers.
-    2. Overall design: I want someone with artistic vision to make the website look beautiful using a combination of colours and themes. 
-3. Consultancy:
-    3. Running quality checks and project vision adherence. 
+1. Design:
+    1. Graphics: I need someone to make the vector art of the vase and the flowers.
+    1. Overall design: I want someone with artistic vision to make the website look beautiful using a combination of colours and themes. 
+1. Consultancy:
+    1. Running quality checks and project vision adherence. 
 
 
 # Milestones
