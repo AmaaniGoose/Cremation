@@ -1,4 +1,4 @@
-![Image of Yaktocat](sddefault.jpg)
+![Header](sddefault.jpg)
 
 
 Amaan
@@ -79,3 +79,7 @@ Anyone who feels they share my artistic vision are welcome to contribute in any 
 # Resources
 
 Vector art I am looking to take inspiration from:
+
+![Header2](capsule_616x353.jpg)
+
+![Header3](maxresdefault.jpg)
