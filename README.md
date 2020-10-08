@@ -12,7 +12,7 @@ Amaan
 
 # Overview
 
-Good news travels slowly, bad news has wings. In these uncertain times, tragedy often strikes fast and it strikes hard. The objective of the project is to design a virtual memorial where people can pay their respects to the dear departed on an hauntingly artistic website. 
+Good news travels slowly, bad news has wings. In these uncertain times, tragedy often strikes fast and it strikes hard. The objective of the project is to design a virtual memorial where people can pay their respects to the dear departed on an hauntingly artistic website. Moreover people sharing similar trauma would be able to connect with each other and help in the process of healing. 
 
 
 # Goals
@@ -20,8 +20,8 @@ Good news travels slowly, bad news has wings. In these uncertain times, tragedy 
 
 
 1. Design a website that allows people to submit virtual condolences. 
-2. Scale it up. (Stretch goal)
-
+2. Scale it up by adding forum for people to share their collective trauma. (Stretch goal)
+3. Suicide-prevention site as a tie-in 
 
 # Specifications
 
@@ -63,7 +63,8 @@ To be honest, the idea for this came to me in a dream where an old school teache
 
 4. Scaling up
 
-	Implementing it so multiple condolences can run simultaneously.
+	Implementing it so multiple condolences can run simultaneously. 
+	Introducing people's shared trauma forum.
 
 
 # Timeline
