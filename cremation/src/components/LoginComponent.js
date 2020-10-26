@@ -14,7 +14,6 @@ class Login extends Component {
       formValues: {}
   }
 
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
@@ -28,8 +27,9 @@ class Login extends Component {
     this.setState({formValues})
 }
 
-handleSubmit(values) {
-    window.alert("Current State is: " + JSON.stringify(values));
+handleSubmit(event) {
+  event.preventDefault();
+  window.alert(JSON.stringify(this.state.formValues));
 }
   render() {
     return (
@@ -48,7 +48,7 @@ handleSubmit(values) {
         </div>
   <div class="row row-header">
       <div class="col mx-auto">
-          <form id="contact-form" class="form" role="form">
+          <form id="contact-form" class="form" role="form" onSubmit={this.handleSubmit.bind(this)}>
               <div class="form-group">
                   <label class="form-label" for="name">Your Name</label>
                   <input type="text" class="form-control" value={this.state.formValues["name"]} onChange={this.handleChange.bind(this)} id="name" name="name" placeholder="Your name" tabindex="1" required />
@@ -58,7 +58,7 @@ handleSubmit(values) {
                   <input type="email" class="form-control" value={this.state.formValues["email"]} onChange={this.handleChange.bind(this)}  id="email" name="email" placeholder="Your Email" tabindex="2" required />
               </div>    
               <div class="form-group">
-                <Button type="submit" color="dark">
+                <Button type="submit" color="dark" >
                   Cremate
                 </Button>
               </div>  
