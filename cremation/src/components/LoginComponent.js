@@ -5,7 +5,7 @@ import {
   Form, FormGroup, Input, Label
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-
+import Death from './DeathComponent';
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -29,7 +29,7 @@ class Login extends Component {
 
 handleSubmit(event) {
   event.preventDefault();
-  window.alert(JSON.stringify(this.state.formValues));
+  window.alert(JSON.stringify(this.state.formValues["name"]));
 }
   render() {
     return (
@@ -44,6 +44,11 @@ handleSubmit(event) {
                 Cremate
               </p>
             </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 ">
+            <Death/>
           </div>
         </div>
   <div class="row row-header">
