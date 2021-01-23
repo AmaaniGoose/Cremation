@@ -16,6 +16,8 @@ class Home extends Component {
                   <h1 class="display-1">
                     <p class="text-center">
                       Blue Flames of Cremation
+
+                      
                     </p>
                   </h1>
                 </div>

@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 
 class Death extends Component {
     constructor(props) {
         super(props);
-
     }
-
     render() {
         return (
             <div class="container vertical center">
@@ -20,12 +17,12 @@ class Death extends Component {
                         <div class="card text-white bg-dark mb-3">
                             <div class="card-header">In Loving Memory Of</div>
                             <div class="card-body">
-                                <h5 class="card-title">[placeholder]</h5>
-                                <p class="card-text">Placeholder</p>
+                                <h5 class="card-title">{this.props.formValues["cremate"]}</h5>
+                                <p class="card-text">Remembered by {this.props.formValues["name"]}</p>
                             </div>
                         </div>
                         {"\n"}
-                        
+                       
                     </div>
                 </div>
             </div>

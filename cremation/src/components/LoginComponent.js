@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable jsx-a11y/no-redundant-roles */
 import React, { Component } from 'react';
 import {
   Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
@@ -6,6 +8,8 @@ import {
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import Death from './DeathComponent';
+import axios from 'axios';
+
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -29,7 +33,17 @@ class Login extends Component {
 
 handleSubmit(event) {
   event.preventDefault();
-  window.alert(JSON.stringify(this.state.formValues["name"]));
+  console.log(JSON.stringify(this.state.formValues));
+  axios
+    .post("/api/users",this.state.formValues)
+    .then((response) => {
+      console.log(response);
+      alert("Cremated successfully");
+      window.location.reload();
+
+    }, (error) => {
+      console.log(error);
+    });
 }
   render() {
     return (
@@ -48,7 +62,7 @@ handleSubmit(event) {
         </div>
         <div class="row">
           <div class="col-12 col-sm-12 ">
-            <Death/>
+            <Death formValues={this.state.formValues}/>
           </div>
         </div>
   <div class="row row-header">
@@ -61,7 +75,11 @@ handleSubmit(event) {
               <div class="form-group">
                   <label class="form-label" for="email">Your Email</label>
                   <input type="email" class="form-control" value={this.state.formValues["email"]} onChange={this.handleChange.bind(this)}  id="email" name="email" placeholder="Your Email" tabindex="2" required />
-              </div>    
+              </div>
+              <div class="form-group">
+                  <label class="form-label" for="cremate">Whom do you want to Cremate?</label>
+                  <input type="text" class="form-control" value={this.state.formValues["cremate"]} onChange={this.handleChange.bind(this)}  id="cremate" name="cremate" placeholder="Name of Crematee" tabindex="3" required />
+              </div>      
               <div class="form-group">
                 <Button type="submit" color="dark" >
                   Cremate
